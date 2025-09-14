@@ -18,6 +18,7 @@
 #define LVW_DEFINE_GET_OBJ_SETTER() \
     ObjSetter& get_obj_setter() {return m_obj_setter;}
 
+// Purpose: To avoid the overhead of virtual function tables brought by inheritance
 #define LVW_DEFINE_OBJ_SETTER_NECESSARY_METHODS(setter_type) \
     LVW_DEFINE_GET_OBJ(); \
     LVW_DEFINE_GET_SELECTOR(); \
