@@ -122,7 +122,11 @@ See [ref](./example)
 
 ## Run example
 
-1. **Clone `lvw` project to your project**
+1.  **Install the dependency libraries**
+
+-   fmt
+
+2.  **Clone `lvw` project to your project**
 
 ```sh
 cd <your_project_dir>       //  e.g. [lv_port_pc_vscode](https://github.com/lvgl/lv_port_pc_vscode)
@@ -130,7 +134,7 @@ mkdir third_party && cd third_party
 git clone https://github.com/JohanChane/lvw --depth 1
 ```
 
-2. **Add to your CMakeLists.txt:**
+3.  **Add to your CMakeLists.txt:**
 
 ```cmake
 set(LVW_BUILD_EXAMPLES ON CACHE BOOL "Build example programs" FORCE)
@@ -141,7 +145,7 @@ add_subdirectory(third_party/lvw)
 target_link_libraries(<your_target> <your_target_libs> lvw lvw_example)
 ```
 
-3. **Call `lvw_example()`**
+4.  **Call `lvw_example()`**
 
 ```c
 #include <lvw_example/example.h>
