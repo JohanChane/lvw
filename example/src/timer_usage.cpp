@@ -15,7 +15,6 @@ void lvw_timer_usage() {
         .text_fmt("cnt: {}", cnt)
         .get_obj_setter()
         .center();
-    int color_hex = 0x000000;
     timer->create(1000, 1000, true, [label_obj = label_setter.get_obj()](LvwTimer& lvw_timer) {
         cnt += 1;
         lvw::LabelSetter(label_obj, LV_PART_MAIN)
