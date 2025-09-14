@@ -1,0 +1,34 @@
+# Build outputs
+build/
+bin/
+lib/
+*.so
+*.a
+*.dll
+*.lib
+*.exe
+*.o
+*.obj
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+*.cmake
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# Dependencies
+third_party/build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+*~
